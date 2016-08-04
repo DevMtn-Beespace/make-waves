@@ -1,0 +1,76 @@
+/* FONTS */
+/*@import url(https://fonts.googleapis.com/css?family=Alex+Brush);*/
+@font-face {
+    font-family: "Japan" !important;
+    src: url("/japan.ttf") format("truetype") !important;
+}
+
+
+/* IMAGE OVERFLOW */
+
+html, body {
+  overflow-x: hidden;
+  background-color: #d8d2ae;
+}
+
+
+.wave-container {
+  height: 100vh;
+  background: url(/img/great_wave_background.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  background-position:center;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+  margin: 10px 20px;
+}
+
+.text h2 {
+  font-family: "Japan", Verdana, Tahoma !important;
+  color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: white;
+}
+
+.backwave {
+  position: absolute;
+  top: 30px;
+  animation: wave-back 5s infinite;
+}
+
+.backwave img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.frontwave {
+  position: absolute;
+  animation: wave-front 5s infinte;
+}
+
+.frontwave img {
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes wave-back {
+  0: {top: 30px}
+  50% {top: 15px}
+  100% {top:30px}
+}
+
+@keyframes wave-front {
+  0% {top: 0px}
+  50% {top:10px}
+  100% {top:0px5
+}
